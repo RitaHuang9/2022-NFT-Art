@@ -1,10 +1,66 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。">
+  <meta property="og:image" content="https://i.imgur.com/Z5wIvAB.jpg"/>
+  <title>
+    首頁
+  </title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-c-gray overflow-x-hidden">
+  <header class="border-b border-black z-20">
+    <div class="container mx-auto flex justify-between relative">
+      <a href="./index.html" class="js-logo flex justify-center py-4 md:w-1/4 md:py-8 md:pr-3 md:border-r md:border-black">
+        <img class="block w-full max-w-[85px] md:max-w-[190px]"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week8-202207/logo.svg"
+          alt="logo">
+      </a>
+      <div class="flex items-center md:items-stretch md:w-full">
+        <!-- TODO: 搜尋框 -->
+        <div class="group pr-6 py-4 flex items-center w-full md:py-8 md:px-6 md:border-r md:border-black xl:px-12">
+          <input type="text" placeholder="搜尋作品名稱、藝術家名稱"
+            class="js-search-input  hidden bg-transparent border-0 w-full max-w-[288px] placeholder:text-c-gray-dark focus:ring-0 md:block">
+          <i class="js-search fa-solid fa-magnifying-glass group-focus:text-primary"></i>
+        </div>
+        <!-- TODO: 選單 -->
+        <div class="js-menu-box md:w-full md:flex">
+          <a href="" class="js-burger py-4 flex items-center justify-center md:hidden ">
+            <i class="js-menu-icon text-lg w-[18px] text-center fa-solid fa-bars"></i>
+          </a>
+          <a href="./search.html"
+            class="hidden leading-6 md:w-2/5 md:flex md:items-center md:justify-center hover:text-primary md:py-8 md:px-4 md:border-r md:border-black xl:px-12">
+            <p>探索</p>
+          </a>
+          <a href=""
+            class="hidden leading-6 hover:text-primary md:flex md:items-center md:justify-center md:w-2/5 md:py-8 md:px-4 md:border-r md:border-black xl:px-12">市值</a>
+          <a class="hidden hover:text-primary ml-auto md:w-1/5 md:flex md:items-center md:justify-center md:py-8 md:pl-4 xl:pl-12"
+            href="">
+            <i class="fa-solid fa-wallet text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="js-menu hidden bg-white w-full px-3 absolute z-10 top-[51px] left-0 pb-6">
+      <ul class="container w-full mx-auto text-center">
+        <li><a href="./search.html" class="block py-6 font-bold text-lg border-b border-black">探索</a></li>
+        <li><a href="" class="block py-6 font-bold text-lg border-b">市值</a></li>
+        <li><a href="" class="block py-3 text-lg w-full border border-black bg-primary text-white">連結錢包</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
 <section class="w-full md:container md:mx-auto">
     <ul class="w-full md:flex md:flex-wrap md:mt-10">
         <li class="w-full border-b-2 border-black md:flex md:items-stretch md:border md:border-black">
@@ -566,3 +622,20 @@ current: index
         </ul>
     </div>
 </section>
+
+    <footer
+      class="mt-[88px] relative border-t border-black before:absolute before:top-2 before:left-0 before:w-full before:h-1 before:bg-black before:mb-6">
+      <div class="container mx-auto pb-6 pt-9">
+        <p class="text-center">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/41dd4b2b56.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 瀑布流 -->
+    <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
