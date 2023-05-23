@@ -1,0 +1,568 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="w-full md:container md:mx-auto">
+    <ul class="w-full md:flex md:flex-wrap md:mt-10">
+        <li class="w-full border-b-2 border-black md:flex md:items-stretch md:border md:border-black">
+            <div
+                class="hidden w-[10%] md:max-w-[100px] md:bg-black md:text-white md:flex md:items-center md:justify-center md:flex-col md:text-center">
+                <h2 class="w-full rotate-90 font-bold font-Squada  text-5xl mt-4">Recommend</h2>
+                <h3 class="w-full font-bold text-xl mt-[150px]">推<br>薦<br>系<br>列</h3>
+            </div>
+            <img class="md:w-1/2 md:max-w-[756px]"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art01.jpg?raw=true"
+                alt="art01">
+            <div class="bg-white px-3 py-8 md:flex md:flex-col md:justify-between">
+                <div class="md:mt-12">
+                    <p class="text-lg font-bold leading-[19px]">Kemus Wu</p>
+                    <h1 class="mt-2 text-2xl font-bold md:text-5xl">瞳孔:流動的脈絡</h1>
+                    <p class="mt-6">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+                </div>
+                <a href="" class="btn btn-primary mt-6">
+                    <p>MORE</p>
+                </a>
+            </div>
+        </li>
+        <li class="w-full border-b-2 border-black md:w-1/2 md:flex md:items-stretch md:border md:border-black">
+            <img class="md:w-1/2 md:order-2 lg:max-h-[340px]"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art02.jpg?raw=true"
+                alt="art02">
+            <div class="bg-white px-3 py-8 md:1/2 md:flex md:flex-col md:justify-between">
+                <div class="md:mt-4">
+                    <p class="text-lg font-bold leading-[19px]">Joanne</p>
+                    <h1 class="mt-2 text-2xl font-bold md:text-[32px]">海洋波度</h1>
+                    <p class="mt-6">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+                </div>
+                <a href="" class="btn btn-primary mt-6">
+                    <p>MORE</p>
+                </a>
+            </div>
+        </li>
+        <li class="w-full border-b-2 border-black md:w-1/2 md:flex md:items-stretch md:border md:border-black">
+            <img class="md:w-1/2 md:order-2 lg:max-h-[340px] " src="./assets/images/art21.jpg" alt="art03">
+            <div class="bg-white px-3 py-8 md:w-1/2 md:flex md:flex-col md:justify-between">
+                <div class="md:mt-4">
+                    <p class="text-lg font-bold leading-[19px]">Michael</p>
+                    <h1 class="mt-2 text-2xl font-bold md:text-[32px]">我家窗前的鳥</h1>
+                    <p class="mt-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                </div>
+                <a href="" class="btn btn-primary mt-6">
+                    <p>MORE</p>
+                </a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- TODO: 市價排行榜 -->
+<section class="mt-[80px] container mx-auto">
+    <!-- TODO: 大標 -->
+    <div class="flex justify-between border-b border-black">
+        <h2 class="text-[32px] font-Squada pb-2 leading-[34px]">Ranking
+            <span class="hidden lg:inline-block ml-4 text-xl font-bold">市價排行榜</span>
+        </h2>
+        <a href="" class="btn ">
+            <p>MORE</p>
+        </a>
+    </div>
+
+    <ul class="mt-6 md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <li>
+            <a href=""
+                class="h-full max-h-[91px] group md:mt-10 ring-1 ring-black flex lg:max-h-full lg:block lg:relative">
+                <div class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4 lg:absolute lg:w-[64px] lg:h-[64px] lg:top-0 lg:left-0 lg:z-10 lg:bg-white lg:border lg:border-black">
+                    1</div>
+                <div class="w-full max-w-[87px] lg:max-w-full border-r border-l border-black relative lg:h-full lg:max-h-[374px]">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary group-hover:lg:bg-transparent group-hover:lg:max-w-[132px] group-hover:lg:top-auto group-hover:lg:left-auto group-hover:lg:bottom-[1px] group-hover:lg:right-0 group-hover:lg:bg-primary group-hover:lg:before:border-r-black group-hover:lg:before:border-l-black group-hover:lg:max-h-10 group-hover:lg:ring-1 group-hover:lg:ring-black">
+                        MORE
+                    </div>
+                    <img class="h-full w-full object-cover" src="./assets/images/art04.jpg" alt="art04">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">散步遇到的女人</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Zoe Jiang</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""
+                class="h-full max-h-[91px] group mt-10 ring-1 ring-black flex lg:block lg:relative lg:max-h-full">
+                <div
+                    class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4 lg:absolute lg:w-[64px] lg:h-[64px] lg:top-0 lg:left-0  lg:z-10 lg:bg-white lg:border lg:border-black">
+                    2</div>
+                <div
+                    class="w-full max-w-[87px] lg:max-w-full border-r border-l border-black relative lg:h-full lg:max-h-[374px]">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary group-hover:lg:bg-transparent group-hover:lg:max-w-[132px] group-hover:lg:top-auto group-hover:lg:left-auto group-hover:lg:bottom-[1px] group-hover:lg:right-0 group-hover:lg:bg-primary group-hover:lg:before:border-r-black group-hover:lg:before:border-l-black group-hover:lg:max-h-10 group-hover:lg:ring-1 group-hover:lg:ring-black">
+                        MORE
+                    </div>
+                    <img class="h-full w-full object-cover" src="./assets/images/art05.jpg" alt="art05">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">爆炸頭的母親</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Yui</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""
+                class="h-full max-h-[91px] group mt-10 ring-1 ring-black flex lg:block lg:relative lg:max-h-full">
+                <div
+                    class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4 lg:absolute lg:w-[64px] lg:h-[64px] lg:top-0 lg:left-0 lg:z-10 lg:bg-white lg:border lg:border-black">
+                    3</div>
+                <div
+                    class="w-full max-w-[87px]  border-r border-l border-black relative lg:max-w-full lg:h-full lg:max-h-[374px]">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary group-hover:lg:bg-transparent group-hover:lg:max-w-[132px] group-hover:lg:top-auto group-hover:lg:left-auto group-hover:lg:bottom-0 group-hover:lg:right-0 group-hover:lg:bg-primary group-hover:lg:before:border-r-black group-hover:lg:before:border-l-black group-hover:lg:max-h-10 group-hover:lg:ring-1 group-hover:lg:ring-black">
+                        MORE
+                    </div>
+
+                    <img class="h-full w-full object-cover" src="./assets/images/art06.jpg" alt="art06">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">夏天的時候</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Bug Lin</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="h-full max-h-[91px] group mt-10 ring-1 ring-black flex">
+                <div class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4">4</div>
+                <div class="w-full max-w-[87px] border-r border-l border-black relative">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary ">
+                        MORE
+                    </div>
+                    <img class="h-full w-full object-cover" src="./assets/images/art29.jpg" alt="art29">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">追求者送我的花</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Michael</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="h-full max-h-[91px] group mt-10 ring-1 ring-black flex">
+                <div class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4">5</div>
+                <div class="w-full max-w-[87px] border-r border-l border-black relative">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary">
+                        MORE
+                    </div>
+                    <img class="h-full w-full object-cover" src="./assets/images/art07.jpg" alt="art07">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">今天釣到的魚</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Wei JJ</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="h-full max-h-[91px] group mt-10 ring-1 ring-black flex">
+                <div class="text-center font-Paytone text-2xl flex items-center justify-center font-bold p-4">6</div>
+                <div class="w-full max-w-[87px] border-r border-l border-black relative">
+                    <div
+                        class="hidden bg-[rgba(0,0,0,0.7)] z-10  w-full  h-full absolute top-0 left-0  group-hover:flex  group-hover:items-center  group-hover:justify-center  text-white font-Squada font-bold  text-lg before:absolute before:bottom-0 before:right-0 before:border-t-[16px] before:border-r-[16px] before:border-t-transparent before:border-b-transparent before:border-r-primary before:border-l-primary">
+                        MORE
+                    </div>
+                    <img class="h-full w-full object-cover" src="./assets/images/art08.jpg" alt="art08">
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-lg py-4 px-2 leading-[26px] h-2/3 font-bold">人生中的貓咪們</h3>
+                    <div class="border-t border-black p-2 flex justify-between h-1/3">
+                        <p class="leading-[17px] font-Squada w-full">Even Lai</p>
+                        <div class="w-full flex items-center justify-end">
+                            <i class="bg-[url('../images/i_rank.svg')] w-[9px] h-[17px] bg-no-repeat "></i>
+                            <p class="font-Squada">300</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+</section>
+
+<!-- TODO: 熱門藝術家 -->
+<section class="mt-[80px] container mx-auto">
+    <!-- TODO: 大標 -->
+    <div class="flex justify-between border-b border-black">
+        <h2 class="text-[32px] font-Squada pb-2 leading-[34px]">Artist
+            <span class="hidden lg:inline-block ml-4 text-xl font-bold">熱門藝術家</span>
+        </h2>
+        <a href="" class="btn ">
+            <p>MORE</p>
+        </a>
+    </div>
+
+    <!-- TODO:swiper -->
+    <!-- Swiper -->
+    <div class="swiper swiper-index-art w-full mt-6 pb-10 lg:h-[480px]">
+        <div class="swiper-wrapper lg:justify-between">
+            <div class="swiper-slide flex flex-col lg:flex-row lg:items-center w-full">
+                <div class="relative">
+                    <div class="relative">
+                        <h2
+                            class="c-swiper-content text-[32px] font-Squada text-white absolute z-10 top-6 left-6 md:text-5xl  lg:text-[65px] lg:leading-[65px] lg:top-4 lg:left-4 xl:top-6 xl:left-6">
+                            Antony <br class="hidden md:block"> Wu</h2>
+                        <img class="w-full block object-cover " src="./assets/images/artist02.jpg" alt="artist02">
+                        <a href=""
+                            class="c-swiper-content btn-scale btn-primary absolute z-10 bottom-2 right-2 lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6 bg-white">
+                            <p>MORE</p>
+                        </a>
+                    </div>
+                    <div
+                        class="c-swiper-content p-6 mt-4 bg-[#ffffffd9] w-full lg:max-w-[220px] lg:p-4 lg:absolute lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6">
+                        <p class="leading-6 lg:text-xs lg:leading-5">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col lg:flex-row lg:items-center w-full">
+                <div class="relative">
+                    <div class="relative">
+                        <h2
+                            class="c-swiper-content text-[32px] font-Squada text-white absolute z-10 top-6 left-6 md:text-5xl  lg:text-[65px] lg:leading-[65px] lg:top-4 lg:left-4 xl:top-6 xl:left-6">
+                            Antony <br class="hidden md:block"> Wu</h2>
+                        <img class="w-full block object-cover" src="./assets/images/artist01.jpg" alt="artist01">
+                        <a href=""
+                            class="c-swiper-content btn-scale btn-primary absolute z-10 bottom-2 right-2 lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6 bg-white ">
+                            <p>MORE</p>
+                        </a>
+                    </div>
+                    <div
+                        class="c-swiper-content p-6 mt-4 bg-[#ffffffd9] w-full lg:max-w-[220px] lg:p-4 lg:absolute lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6">
+                        <p class="leading-6 lg:text-xs lg:leading-5">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col lg:flex-row lg:items-center w-full">
+                <div class="relative">
+                    <div class="relative">
+                        <h2
+                            class="c-swiper-content text-[32px] font-Squada text-white absolute z-10 top-6 left-6 md:text-5xl  lg:text-[65px] lg:leading-[65px] lg:top-4 lg:left-4 xl:top-6 xl:left-6">
+                            Antony <br class="hidden md:block"> Wu</h2>
+                        <img class="w-full block object-cover" src="./assets/images/artist03.jpg" alt="artist03">
+                        <a href=""
+                            class="c-swiper-content btn-scale btn-primary absolute z-10 bottom-2 right-2 lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6 bg-white">
+                            <p>MORE</p>
+                        </a>
+                    </div>
+                    <div
+                        class="c-swiper-content p-6 mt-4 bg-[#ffffffd9] w-full lg:max-w-[220px] lg:p-4 lg:absolute lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6">
+                        <p class="leading-6 lg:text-xs lg:leading-5">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col lg:flex-row lg:items-center w-full">
+                <div class="relative">
+                    <div class="relative">
+                        <h2
+                            class="c-swiper-content text-[32px] font-Squada text-white absolute z-10 top-6 left-6 md:text-5xl  lg:text-[65px] lg:leading-[65px] lg:top-4 lg:left-4 xl:top-6 xl:left-6">
+                            Antony <br class="hidden md:block"> Wu</h2>
+                        <img class="w-full block object-cover" src="./assets/images/artist04.jpg" alt="artist04">
+                        <a href=""
+                            class="c-swiper-content btn-scale btn-primary absolute z-10 bottom-2 right-2 lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6 bg-white">
+                            <p>MORE</p>
+                        </a>
+                    </div>
+                    <div
+                        class="c-swiper-content p-6 mt-4 bg-[#ffffffd9] w-full lg:max-w-[220px] lg:p-4 lg:absolute lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6">
+                        <p class="leading-6 lg:text-xs lg:leading-5">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col lg:flex-row lg:items-center w-full">
+                <div class="relative">
+                    <div class="relative">
+                        <h2
+                            class="c-swiper-content text-[32px] font-Squada text-white absolute z-10 top-6 left-6 md:text-5xl  lg:text-[65px] lg:leading-[65px] lg:top-4 lg:left-4 xl:top-6 xl:left-6">
+                            Antony <br class="hidden md:block"> Wu</h2>
+                        <img class="w-full block object-cover" src="./assets/images/artist05.jpg" alt="artist05 ">
+                        <a href=""
+                            class="c-swiper-content btn-scale btn-primary absolute z-10 bottom-2 right-2 lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6 bg-white">
+                            <p>MORE</p>
+                        </a>
+                    </div>
+                    <div
+                        class="c-swiper-content p-6 mt-4 bg-[#ffffffd9] w-full lg:max-w-[220px] lg:p-4 lg:absolute lg:bottom-4 lg:left-4 xl:bottom-6 xl:left-6">
+                        <p class="leading-6 lg:text-xs lg:leading-5">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination bottom-0"></div>
+    </div>
+</section>
+
+
+<!-- TODO: 最新藝術品 -->
+<section class="mt-[80px] container mx-auto">
+    <!-- TODO: 大標 -->
+    <div class="flex justify-between border-b border-black ">
+        <h2 class="text-[32px] font-Squada pb-2 leading-[34px]">Artwork
+            <span class="hidden lg:inline-block ml-4 text-xl font-bold">最新藝術品</span>
+        </h2>
+        <a href="" class="btn ">
+            <p>MORE</p>
+        </a>
+    </div>
+    <div class="grid-art h-full">
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art09.jpg" alt="art09">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">區塊戀-他的私生活</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art10.jpg" alt="art10">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">夏娃的醜聞</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art02.jpg" alt="art02">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">藍色啤酒海</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art11.jpg" alt="art11">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">沒有人愛我</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art12.jpg" alt="art12">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">不哭不哭眼淚是珍珠</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art03.jpg" alt="art03">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">十分鐘就到</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art04.jpg" alt="art04">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">我這樣有美嗎</div>
+        </a>
+        <a class="group block grid-item grid-sizer px-3 mt-12">
+            <div class="bg-white p-6">
+                <div class="relative">
+                    <img class="object-cover h-full" src="./assets/images/art27.jpg" alt="art27">
+                    <div
+                        class="hidden absolute top-0 left-0 group-hover:flex group-hover:flex-col group-hover:justify-between group-hover:bg-[rgba(0,0,0,0.7)] w-full h-full before:w-[calc(100%-32px)] before:h-[calc(100%-32px)] p-6 before:absolute before:top-4 before:left-4 before:ring-1 before:ring-white before:inline-block">
+                        <div>
+                            <p class="font-bold text-white">唯一想擁有的人，唯一不可以擁有的人</p>
+                            <div class="w-full flex items-center mt-2">
+                                <i
+                                    class="bg-[url('../images/i_rank_white.svg')] bg-contain w-[9px] h-[17px] bg-no-repeat mr-2"></i>
+                                <p class="font-Squada text-white">300</p>
+                            </div>
+                        </div>
+                        <div href="" class="btn btn-primary bg-white h-[35px]">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leading-6 py-4 border-b border-black font-bold">我真的受傷了</div>
+        </a>
+    </div>
+</section>
+
+<!-- TODO: join us -->
+<section class="mt-[80px]">
+    <div class="w-full text-center pb-10 relative border-b border-black before:absolute before:bottom-2 before:left-0 before:w-full before:h-1 before:bg-black">
+        <h2 class="text-5xl font-Squada leading-[50px]">Join Us</h2>
+        <h3 class="text-xl leading-[29px] mt-4 font-bold">創建並出售你的藝術品</h3>
+    </div>
+    <div class="container mx-auto">
+        <ul class="sm:grid sm:gap-4 sm:grid-cols-2 lg:flex lg:items-center lg:justify-between">
+            <li class="flex flex-col justify-center text-center mt-12">
+                <div>
+                    <i class="fa-solid fa-wallet text-[40px] text-primary"></i>
+                    <h4 class="text-lg font-bold mt-4">設置你的錢包</h4>
+                </div>
+                <p class="mt-6">設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
+            </li>
+            <li class="flex flex-col justify-center text-center mt-12">
+                <div>
+                    <i class="fa-solid fa-pen-ruler text-[40px] text-primary"></i>
+                    <h4 class="text-lg font-bold mt-4">創建您的主頁</h4>
+                </div>
+                <p class="mt-6">註冊成為會員，編輯您的資料<br>讓大家了解你</p>
+            </li>
+            <li class="flex flex-col justify-center text-center mt-12">
+                <div>
+                    <i class="fa-solid fa-icons text-[40px] text-primary"></i>
+                    <h4 class="text-lg font-bold mt-4">添加你的 NFT</h4>
+                </div>
+                <p class="mt-6">上傳你的作品<br>添加標題和描述</p>
+            </li>
+            <li class="flex flex-col justify-center text-center mt-12">
+                <div>
+                    <i class="fa-solid fa-tags text-[40px] text-primary"></i>
+                    <h4 class="text-lg font-bold mt-4">列出它們出售</h4>
+                </div>
+                <p class="mt-6">選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
+            </li>
+        </ul>
+    </div>
+</section>
